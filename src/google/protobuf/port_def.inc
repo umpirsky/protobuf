@@ -971,8 +971,7 @@
 // globally even though it's only used for PROTOBUF_FIELD_OFFSET.
 #pragma GCC diagnostic ignored "-Winvalid-offsetof"
 #ifdef __clang__
-// TODO(b/255348263): Upgrade our kokoro Ubuntu to use clang 6, then change th 5 to a 6
-static_assert(PROTOBUF_CLANG_MIN(5, 0), "Protobuf only supports Clang 6.0 and newer.");
+static_assert(PROTOBUF_CLANG_MIN(6, 0), "Protobuf only supports Clang 6.0 and newer.");
 #endif
 // Some versions of GCC seem to think that
 //  [this] { Foo(); }
